@@ -1,0 +1,15 @@
+D:\LearningCSharp\leetcode\ReverseArray\BasicOop\bin\Debug\net8.0\BasicOop.exe
+D:\LearningCSharp\leetcode\ReverseArray\BasicOop\bin\Debug\net8.0\BasicOop.deps.json
+D:\LearningCSharp\leetcode\ReverseArray\BasicOop\bin\Debug\net8.0\BasicOop.runtimeconfig.json
+D:\LearningCSharp\leetcode\ReverseArray\BasicOop\bin\Debug\net8.0\BasicOop.dll
+D:\LearningCSharp\leetcode\ReverseArray\BasicOop\bin\Debug\net8.0\BasicOop.pdb
+D:\LearningCSharp\leetcode\ReverseArray\BasicOop\obj\Debug\net8.0\BasicOop.GeneratedMSBuildEditorConfig.editorconfig
+D:\LearningCSharp\leetcode\ReverseArray\BasicOop\obj\Debug\net8.0\BasicOop.AssemblyInfoInputs.cache
+D:\LearningCSharp\leetcode\ReverseArray\BasicOop\obj\Debug\net8.0\BasicOop.AssemblyInfo.cs
+D:\LearningCSharp\leetcode\ReverseArray\BasicOop\obj\Debug\net8.0\BasicOop.csproj.CoreCompileInputs.cache
+D:\LearningCSharp\leetcode\ReverseArray\BasicOop\obj\Debug\net8.0\BasicOop.sourcelink.json
+D:\LearningCSharp\leetcode\ReverseArray\BasicOop\obj\Debug\net8.0\BasicOop.dll
+D:\LearningCSharp\leetcode\ReverseArray\BasicOop\obj\Debug\net8.0\refint\BasicOop.dll
+D:\LearningCSharp\leetcode\ReverseArray\BasicOop\obj\Debug\net8.0\BasicOop.pdb
+D:\LearningCSharp\leetcode\ReverseArray\BasicOop\obj\Debug\net8.0\BasicOop.genruntimeconfig.cache
+D:\LearningCSharp\leetcode\ReverseArray\BasicOop\obj\Debug\net8.0\ref\BasicOop.dll
