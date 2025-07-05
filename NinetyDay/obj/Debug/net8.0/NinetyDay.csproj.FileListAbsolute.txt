@@ -1,0 +1,15 @@
+D:\LearningCSharp\leetcode\ReverseArray\NinetyDay\bin\Debug\net8.0\NinetyDay.exe
+D:\LearningCSharp\leetcode\ReverseArray\NinetyDay\bin\Debug\net8.0\NinetyDay.deps.json
+D:\LearningCSharp\leetcode\ReverseArray\NinetyDay\bin\Debug\net8.0\NinetyDay.runtimeconfig.json
+D:\LearningCSharp\leetcode\ReverseArray\NinetyDay\bin\Debug\net8.0\NinetyDay.dll
+D:\LearningCSharp\leetcode\ReverseArray\NinetyDay\bin\Debug\net8.0\NinetyDay.pdb
+D:\LearningCSharp\leetcode\ReverseArray\NinetyDay\obj\Debug\net8.0\NinetyDay.GeneratedMSBuildEditorConfig.editorconfig
+D:\LearningCSharp\leetcode\ReverseArray\NinetyDay\obj\Debug\net8.0\NinetyDay.AssemblyInfoInputs.cache
+D:\LearningCSharp\leetcode\ReverseArray\NinetyDay\obj\Debug\net8.0\NinetyDay.AssemblyInfo.cs
+D:\LearningCSharp\leetcode\ReverseArray\NinetyDay\obj\Debug\net8.0\NinetyDay.csproj.CoreCompileInputs.cache
+D:\LearningCSharp\leetcode\ReverseArray\NinetyDay\obj\Debug\net8.0\NinetyDay.sourcelink.json
+D:\LearningCSharp\leetcode\ReverseArray\NinetyDay\obj\Debug\net8.0\NinetyDay.dll
+D:\LearningCSharp\leetcode\ReverseArray\NinetyDay\obj\Debug\net8.0\refint\NinetyDay.dll
+D:\LearningCSharp\leetcode\ReverseArray\NinetyDay\obj\Debug\net8.0\NinetyDay.pdb
+D:\LearningCSharp\leetcode\ReverseArray\NinetyDay\obj\Debug\net8.0\NinetyDay.genruntimeconfig.cache
+D:\LearningCSharp\leetcode\ReverseArray\NinetyDay\obj\Debug\net8.0\ref\NinetyDay.dll
