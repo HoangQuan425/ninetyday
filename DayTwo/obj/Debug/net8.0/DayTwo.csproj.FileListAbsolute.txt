@@ -1,0 +1,15 @@
+D:\LearningCSharp\leetcode\ReverseArray\DayTwo\bin\Debug\net8.0\DayTwo.exe
+D:\LearningCSharp\leetcode\ReverseArray\DayTwo\bin\Debug\net8.0\DayTwo.deps.json
+D:\LearningCSharp\leetcode\ReverseArray\DayTwo\bin\Debug\net8.0\DayTwo.runtimeconfig.json
+D:\LearningCSharp\leetcode\ReverseArray\DayTwo\bin\Debug\net8.0\DayTwo.dll
+D:\LearningCSharp\leetcode\ReverseArray\DayTwo\bin\Debug\net8.0\DayTwo.pdb
+D:\LearningCSharp\leetcode\ReverseArray\DayTwo\obj\Debug\net8.0\DayTwo.GeneratedMSBuildEditorConfig.editorconfig
+D:\LearningCSharp\leetcode\ReverseArray\DayTwo\obj\Debug\net8.0\DayTwo.AssemblyInfoInputs.cache
+D:\LearningCSharp\leetcode\ReverseArray\DayTwo\obj\Debug\net8.0\DayTwo.AssemblyInfo.cs
+D:\LearningCSharp\leetcode\ReverseArray\DayTwo\obj\Debug\net8.0\DayTwo.csproj.CoreCompileInputs.cache
+D:\LearningCSharp\leetcode\ReverseArray\DayTwo\obj\Debug\net8.0\DayTwo.sourcelink.json
+D:\LearningCSharp\leetcode\ReverseArray\DayTwo\obj\Debug\net8.0\DayTwo.dll
+D:\LearningCSharp\leetcode\ReverseArray\DayTwo\obj\Debug\net8.0\refint\DayTwo.dll
+D:\LearningCSharp\leetcode\ReverseArray\DayTwo\obj\Debug\net8.0\DayTwo.pdb
+D:\LearningCSharp\leetcode\ReverseArray\DayTwo\obj\Debug\net8.0\DayTwo.genruntimeconfig.cache
+D:\LearningCSharp\leetcode\ReverseArray\DayTwo\obj\Debug\net8.0\ref\DayTwo.dll
