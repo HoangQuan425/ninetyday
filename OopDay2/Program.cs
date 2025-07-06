@@ -23,11 +23,19 @@
 		{
 			Console.WriteLine("gầm gừ");
 		}
+		public void Eat()
+		{
+			Console.WriteLine("eat meat");
+		}
 	}
 	class Cat : Animal
 	{
 		public override void Speak() {
 			Console.WriteLine("meo meo");
+		}
+		public void Eat()
+		{
+			Console.WriteLine("eat fish");
 		}
 	}
 	class Dog : Animal
@@ -47,8 +55,12 @@
 			student.Introduce();
 			Animal Dog = new Dog();
 			Animal Cat = new Cat();
+			Cat cat1 = new Cat();
 			Dog.Speak();
 			Cat.Speak();
+			Dog.Eat();
+			Cat.Eat();
+			cat1.Eat();
 			Console.WriteLine("Hello, World!");
 		}
 	}

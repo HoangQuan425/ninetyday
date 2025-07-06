@@ -1,0 +1,15 @@
+D:\LearningCSharp\leetcode\ReverseArray\OopDay2\bin\Debug\net8.0\OopDay2.exe
+D:\LearningCSharp\leetcode\ReverseArray\OopDay2\bin\Debug\net8.0\OopDay2.deps.json
+D:\LearningCSharp\leetcode\ReverseArray\OopDay2\bin\Debug\net8.0\OopDay2.runtimeconfig.json
+D:\LearningCSharp\leetcode\ReverseArray\OopDay2\bin\Debug\net8.0\OopDay2.dll
+D:\LearningCSharp\leetcode\ReverseArray\OopDay2\bin\Debug\net8.0\OopDay2.pdb
+D:\LearningCSharp\leetcode\ReverseArray\OopDay2\obj\Debug\net8.0\OopDay2.GeneratedMSBuildEditorConfig.editorconfig
+D:\LearningCSharp\leetcode\ReverseArray\OopDay2\obj\Debug\net8.0\OopDay2.AssemblyInfoInputs.cache
+D:\LearningCSharp\leetcode\ReverseArray\OopDay2\obj\Debug\net8.0\OopDay2.AssemblyInfo.cs
+D:\LearningCSharp\leetcode\ReverseArray\OopDay2\obj\Debug\net8.0\OopDay2.csproj.CoreCompileInputs.cache
+D:\LearningCSharp\leetcode\ReverseArray\OopDay2\obj\Debug\net8.0\OopDay2.sourcelink.json
+D:\LearningCSharp\leetcode\ReverseArray\OopDay2\obj\Debug\net8.0\OopDay2.dll
+D:\LearningCSharp\leetcode\ReverseArray\OopDay2\obj\Debug\net8.0\refint\OopDay2.dll
+D:\LearningCSharp\leetcode\ReverseArray\OopDay2\obj\Debug\net8.0\OopDay2.pdb
+D:\LearningCSharp\leetcode\ReverseArray\OopDay2\obj\Debug\net8.0\OopDay2.genruntimeconfig.cache
+D:\LearningCSharp\leetcode\ReverseArray\OopDay2\obj\Debug\net8.0\ref\OopDay2.dll

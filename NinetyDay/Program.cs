@@ -13,6 +13,19 @@ namespace NinetyDay
 				(a[i], a[a.Length - i - 1]) = (a[a.Length - i - 1], a[i]);
 			}
 		}
+		static void ReverseArrayInPlaceTwoPointer(int[] a)
+		{
+			//12345
+
+			int left = 0;
+			int right = a.Length - 1;
+			while(left < right)
+			{
+				(a[left], a[right]) = (a[right], a[left]);
+				left++;
+				right--;
+			}
+		}
 		static int findMin(int[] a)
 		{
 			//12345
@@ -61,7 +74,7 @@ namespace NinetyDay
 			}
 			return count;
 		}
-		public static bool isPalidrome(int s)
+		/*public static bool isPalidrome(int s)
 		{
 			string a = s.ToString(); 
 			if (a.Length == 0) return false;
@@ -73,6 +86,23 @@ namespace NinetyDay
 				{
 					return false;
 				}
+			}
+			return true;
+		}*/
+		public static bool isPalidromeTwoPointer(string s)
+		{
+			if (string.IsNullOrEmpty(s)) return true;
+			if (s.Length == 1) return true;
+			int left = 0;
+			int right = s.Length - 1;
+			while(left < right)
+			{
+				if (s[left] != s[right])
+				{
+					return false;
+				}
+				left++;
+				right--;
 			}
 			return true;
 		}
