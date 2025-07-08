@@ -53,7 +53,7 @@
 			int j = 0;
 			var dict = new Dictionary<char, int>();
 			int maxLenght = 0;
-			while (j < s.Length) // abcabcaa
+			while (j < s.Length) 
 			{
 				if (dict.ContainsKey(s[j]))
 				{

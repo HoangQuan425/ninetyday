@@ -1,0 +1,15 @@
+D:\LearningCSharp\leetcode\ReverseArray\Day3\bin\Debug\net8.0\Day3.exe
+D:\LearningCSharp\leetcode\ReverseArray\Day3\bin\Debug\net8.0\Day3.deps.json
+D:\LearningCSharp\leetcode\ReverseArray\Day3\bin\Debug\net8.0\Day3.runtimeconfig.json
+D:\LearningCSharp\leetcode\ReverseArray\Day3\bin\Debug\net8.0\Day3.dll
+D:\LearningCSharp\leetcode\ReverseArray\Day3\bin\Debug\net8.0\Day3.pdb
+D:\LearningCSharp\leetcode\ReverseArray\Day3\obj\Debug\net8.0\Day3.GeneratedMSBuildEditorConfig.editorconfig
+D:\LearningCSharp\leetcode\ReverseArray\Day3\obj\Debug\net8.0\Day3.AssemblyInfoInputs.cache
+D:\LearningCSharp\leetcode\ReverseArray\Day3\obj\Debug\net8.0\Day3.AssemblyInfo.cs
+D:\LearningCSharp\leetcode\ReverseArray\Day3\obj\Debug\net8.0\Day3.csproj.CoreCompileInputs.cache
+D:\LearningCSharp\leetcode\ReverseArray\Day3\obj\Debug\net8.0\Day3.sourcelink.json
+D:\LearningCSharp\leetcode\ReverseArray\Day3\obj\Debug\net8.0\Day3.dll
+D:\LearningCSharp\leetcode\ReverseArray\Day3\obj\Debug\net8.0\refint\Day3.dll
+D:\LearningCSharp\leetcode\ReverseArray\Day3\obj\Debug\net8.0\Day3.pdb
+D:\LearningCSharp\leetcode\ReverseArray\Day3\obj\Debug\net8.0\Day3.genruntimeconfig.cache
+D:\LearningCSharp\leetcode\ReverseArray\Day3\obj\Debug\net8.0\ref\Day3.dll
