@@ -64,7 +64,7 @@ namespace OOPDay4.Repositories
 		{
 			if(_employee.Count == 0)
 			{
-				throw new Exception("list is empty");
+				return new List<Employee>();
 			}
 			
 			return _employee;

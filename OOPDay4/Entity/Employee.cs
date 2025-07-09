@@ -158,6 +158,8 @@ namespace OOPDay4.Entity
 
 		public Employee(string id, string name, int age, DateOnly dateBirth, DateOnly hiredDate, DateOnly? leaveDate, decimal baseSalary, decimal allowance, decimal bonus, decimal tax, decimal overTimePay)
 		{
+			if (string.IsNullOrEmpty(id))
+				throw new ArgumentException("id cannot be null or empty");
 			Id = id;
 			Name = name;
 			Age = age;
@@ -171,7 +173,9 @@ namespace OOPDay4.Entity
 			OverTimePay = overTimePay;
 		}
 
-		protected abstract void ShowInfo();
+
+
+		public abstract void ShowInfo();
 		protected abstract decimal CalculateSalary();
 		public decimal DisplaySalary()
 		{

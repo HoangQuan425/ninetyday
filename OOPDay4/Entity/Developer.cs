@@ -30,7 +30,7 @@ namespace OOPDay4.Entity
 			return NetSalary;
 		}
 
-		protected override void ShowInfo()
+		public override void ShowInfo()
 		{
 			Console.WriteLine($"id: {Id}");
 			Console.WriteLine($"name: {Name}");
