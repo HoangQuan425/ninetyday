@@ -1,12 +1,8 @@
 ﻿using OOPDay4.Entity;
 using OOPDay4.Repositories;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+using OOPDay4.Services.Interfaces;
 
-namespace OOPDay4.Services
+namespace OOPDay4.Services.Implementations
 {
 	public class EmployeeService : IEmployeeService
 	{
@@ -24,17 +20,6 @@ namespace OOPDay4.Services
 				throw new Exception("employee is null or empty");
 			}
 			var result = _employeeRepository.Add(e);
-			return result;
-		}
-
-		public decimal CalculateEmployeeSalary(string id)
-		{
-			if(string.IsNullOrEmpty(id)) throw new Exception("employeeId is null or empty");
-			var employee = _employeeRepository.GetById(id);
-			if (employee == null) {
-				throw new Exception("employee is null or empty");
-			}
-			var result = employee.DisplaySalary();
 			return result;
 		}
 

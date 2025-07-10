@@ -1,13 +1,9 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using OOPDay4.Entity;
 
 namespace OOPDay4.Interfaces
 {
 	public interface IReportToManager
 	{
-		string ReportToManager(string managerId);
+		Report ReportToManager(string managerId, string message);
 	}
 }

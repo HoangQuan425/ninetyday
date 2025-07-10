@@ -10,9 +10,9 @@ namespace OOPDay4.Repositories
 	public interface IEmployeeRepository
 	{
 		List<Employee> GetAll();
-		bool Add(Employee e);
+		bool Add(Employee employee);
 		bool Delete(string employeeId);
-		bool Update(string employeeId, Employee e);
+		bool Update(string employeeId, Employee employee);
 		Employee GetById(string employeeId);
 	}
 }

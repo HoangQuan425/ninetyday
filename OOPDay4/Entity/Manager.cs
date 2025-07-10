@@ -1,12 +1,8 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using OOPDay4.Interfaces;
 
 namespace OOPDay4.Entity
 {
-	public class Manager : Employee
+	public class Manager : Employee, IWork
 	{
 		public Manager(string id, string name, int age, DateOnly dateBirth, DateOnly hiredDate, DateOnly? leaveDate, decimal baseSalary, decimal allowance, decimal bonus, decimal tax, decimal overTimePay) : base(id, name, age, dateBirth, hiredDate, leaveDate, baseSalary, allowance, bonus, tax, overTimePay)
 		{
@@ -28,6 +24,11 @@ namespace OOPDay4.Entity
 			Console.WriteLine($"Date birth: {DateBirth}");
 			Console.WriteLine($"hired date: {HiredDate}");
 			Console.WriteLine($"leave date: {LeaveDate}");
+		}
+
+		public void DoWork()
+		{
+			Console.WriteLine($"Manager: {Name} is doing their job to assign task and manage the team");
 		}
 	}
 }

@@ -1,4 +1,5 @@
 ﻿using OOPDay4.Entity;
+using OOPDay4.Exceptions;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -21,24 +22,24 @@ namespace OOPDay4.Repositories
 			this._employee = employee;
 		}
 
-		public bool Add(Employee e)
+		public bool Add(Employee employee)
 		{
-			if (e == null)
+			if (employee == null)
 			{
-				throw new Exception("employee is null");
+				throw new ArgumentNullException(nameof(employee), "employee is null");
 			}
-			if (string.IsNullOrEmpty(e.Id))
+			if (string.IsNullOrEmpty(employee.Id))
 			{
-				throw new Exception("id cannot be null or empty");
+				throw new ArgumentNullException(nameof(employee.Id), "id cannot be null or empty");
 			}
 			foreach(Employee emp in _employee)
 			{
-				if (emp.Id.Equals(e.Id))
+				if (emp.Id.Equals(employee.Id))
 				{
-					throw new Exception("id already exists");
+					throw new DuplicateEmployeeIdException($"Employee with {employee.Id} already exists");
 				}
 			}
-			_employee.Add(e);
+			_employee.Add(employee);
 			return true;
 		}
 
@@ -46,7 +47,7 @@ namespace OOPDay4.Repositories
 		{
 			if(string.IsNullOrEmpty(employeeId))
 			{
-				throw new Exception("id can not be null or empty");
+				throw new ArgumentNullException(nameof(employeeId), "id can not be null or empty");
 			}
 			
 			foreach (Employee e in _employee)
@@ -83,33 +84,33 @@ namespace OOPDay4.Repositories
 					return e;
 				}
 			}
-			return null;
+			throw new EmployeeNotFoundException($"Employee with id {employeeId} not found");
 		}
 
-		public bool Update(string employeeId, Employee e)
+		public bool Update(string employeeId, Employee employee)
 		{
-			if (e==null)
+			if (employee == null)
 			{
-				throw new Exception("employee can not be null or empty");
+				throw new ArgumentNullException("employee can not be null or empty");
 			}
 			if (string.IsNullOrEmpty(employeeId))
 			{
-				throw new Exception("employee id can not be null or empty");
+				throw new ArgumentNullException("employee id can not be null or empty");
 			}
 			
 			foreach (Employee emp in _employee)
 			{
 				if (emp.Id.Equals(employeeId))
 				{
-					emp.Name = e.Name;
-					emp.Age = e.Age;
-					emp.LeaveDate = e.LeaveDate;
-					emp.HiredDate = e.HiredDate;
-					emp.Allowance = e.Allowance;
-					emp.OverTimePay = e.OverTimePay;
-					emp.BaseSalary = e.BaseSalary;
-					emp.Bonus = e.Bonus;
-					emp.DateBirth = e.DateBirth;
+					emp.Name = employee.Name;
+					emp.Age = employee.Age;
+					emp.LeaveDate = employee.LeaveDate;
+					emp.HiredDate = employee.HiredDate;
+					emp.Allowance = employee.Allowance;
+					emp.OverTimePay = employee.OverTimePay;
+					emp.BaseSalary = employee.BaseSalary;
+					emp.Bonus = employee.Bonus;
+					emp.DateBirth = employee.DateBirth;
 					return true;
 				}
 			}

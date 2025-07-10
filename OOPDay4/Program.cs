@@ -1,6 +1,8 @@
 ﻿using OOPDay4.Entity;
+using OOPDay4.Exceptions;
 using OOPDay4.Repositories;
-using OOPDay4.Services;
+using OOPDay4.Services.Implementations;
+using OOPDay4.Services.Interfaces;
 using OOPDay4.Strategies;
 
 namespace OOPDay4
@@ -37,6 +39,7 @@ namespace OOPDay4
 		}
 		static string InputId()
 		{
+			var handle = new ExceptionHandler();
 			do
 			{
 				try
@@ -44,13 +47,13 @@ namespace OOPDay4
 					string input = Console.ReadLine();
 					if (string.IsNullOrWhiteSpace(input))
 					{
-						throw new ArgumentException("Input cannot be null or empty");
+						throw new DuplicateEmployeeIdException("test duplicate Id");
 					}
 					return input;
 				}
-				catch (ArgumentException e)
+				catch (Exception e)
 				{
-					Console.WriteLine(e.Message);
+					handle.Handle(e);
 				}
 			} while (true);
 		}
@@ -153,9 +156,10 @@ namespace OOPDay4
 					case 1:
 						{
 							Console.WriteLine("please pick an interger choose add manager(1) or developer(2): ");
-							int choose = int.Parse(Console.ReadLine());
+							int choose ;
 							do
 							{
+								choose = int.Parse(Console.ReadLine());
 								if (choose < 1 || choose > 2)
 								{
 									Console.WriteLine("pick again must be 1 or 2");
@@ -165,59 +169,36 @@ namespace OOPDay4
 									break;
 								}
 							} while (true);
+							Console.WriteLine("input Id: ");
+							string id = InputId();
+							Console.WriteLine("input Name: ");
+							string name = InputString();
+							Console.WriteLine("input Age: ");
+							int age = InputNumber();
+							Console.WriteLine("input date of birth: ");
+							DateTime birthDate = InputDate();
+							Console.WriteLine("input hired date: ");
+							DateTime hiredDate = InputDate();
+							Console.WriteLine("input leave date: ");
+							DateTime? leaveDate = InputDateCanNullable();
+							Console.WriteLine("input base salary: ");
+							decimal baseS = InputDecimalNumber();
+							Console.WriteLine("input allowance: ");
+							decimal allowance = InputDecimalNumber();
+							Console.WriteLine("input bonus: ");
+							decimal bonus = InputDecimalNumber();
+							Console.WriteLine("input tax: ");
+							decimal tax = InputDecimalNumber();
+							Console.WriteLine("input overTime: ");
+							decimal overTime = InputDecimalNumber();
 							if (choose == 2)
 							{
-								Console.WriteLine("input Id: ");
-								string id = InputId();
-								Console.WriteLine("input Name: ");
-								string name = InputString();
-								Console.WriteLine("input Age: ");
-								int age = InputNumber();
-								Console.WriteLine("input date of birth: ");
-								DateTime birthDate = InputDate();
-								Console.WriteLine("input hired date: ");
-								DateTime hiredDate = InputDate();
-								Console.WriteLine("input leave date: ");
-								DateTime? leaveDate = InputDateCanNullable();
-								Console.WriteLine("input base salary: ");
-								decimal baseS = InputDecimalNumber();
-								Console.WriteLine("input allowance: ");
-								decimal allowance = InputDecimalNumber();
-								Console.WriteLine("input bonus: ");
-								decimal bonus = InputDecimalNumber();
-								Console.WriteLine("input tax: ");
-								decimal tax = InputDecimalNumber();
-								Console.WriteLine("input overTime: ");
-								decimal overTime = InputDecimalNumber();
-
 								Employee dev = new Developer(id, name, age, DateOnly.FromDateTime(birthDate),
 									DateOnly.FromDateTime(hiredDate), leaveDate.HasValue ? DateOnly.FromDateTime(leaveDate.Value) : null, baseS, allowance, bonus, tax, overTime);
 								service.Add(dev);
 							}
 							else if (choose == 1)
 							{
-								Console.WriteLine("input Id: ");
-								string id = InputId();
-								Console.WriteLine("input Name: ");
-								string name = InputString();
-								Console.WriteLine("input Age: ");
-								int age = InputNumber();
-								Console.WriteLine("input date of birth: ");
-								DateTime birthDate = InputDate();
-								Console.WriteLine("input hired date: ");
-								DateTime hiredDate = InputDate();
-								Console.WriteLine("input leave date: ");
-								DateTime? leaveDate = InputDateCanNullable();
-								Console.WriteLine("input base salary: ");
-								decimal baseS = InputDecimalNumber();
-								Console.WriteLine("input allowance: ");
-								decimal allowance = InputDecimalNumber();
-								Console.WriteLine("input bonus: ");
-								decimal bonus = InputDecimalNumber();
-								Console.WriteLine("input tax: ");
-								decimal tax = InputDecimalNumber();
-								Console.WriteLine("input overTime: ");
-								decimal overTime = InputDecimalNumber();
 								Employee manager = new Manager(id, name, age, DateOnly.FromDateTime(birthDate),
 									DateOnly.FromDateTime(hiredDate), leaveDate.HasValue ? DateOnly.FromDateTime(leaveDate.Value) : null, baseS, allowance, bonus, tax, overTime);
 								service.Add(manager);
@@ -385,7 +366,8 @@ namespace OOPDay4
 							}
 							else
 							{
-								var result = service.CalculateEmployeeSalary(employee.Id);
+								IEmployeeSalaryService employeeSalaryService = new EmployeeSalaryService(new EmployeeRepository(listEmployee));
+								var result = employeeSalaryService.CalculateEmployeeSalary(employee.Id);
 								Console.WriteLine(result);
 							}
 							break;

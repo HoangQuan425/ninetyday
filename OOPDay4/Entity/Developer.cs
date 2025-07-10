@@ -1,9 +1,4 @@
 ﻿using OOPDay4.Interfaces;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace OOPDay4.Entity
 {
@@ -15,12 +10,18 @@ namespace OOPDay4.Entity
 
 		public void DoWork()
 		{
-			Console.WriteLine($"{Name} is working on their assigned task.");
+			Console.WriteLine($"Developer: {Name} is working on their assigned task, code and fix bug.");
 		}
 
-		public string ReportToManager(string managerId)
+		public Report ReportToManager(string managerId, string message)
 		{
-			return $"developer {Name} report to manager with id: {managerId}";
+			//return $"developer {Name} report to their manager with id: {managerId}";
+			if(managerId == null)
+			{
+				throw new ArgumentNullException(nameof(managerId), "manager id is null or empty");
+			}
+			Report report = new Report(Id, managerId, message, DateTime.UtcNow);
+			return report;
 		}
 
 		protected override decimal CalculateSalary()

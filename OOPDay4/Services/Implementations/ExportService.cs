@@ -1,7 +1,7 @@
 ﻿using OOPDay4.Entity;
 using OOPDay4.Strategies;
 
-namespace OOPDay4.Services
+namespace OOPDay4.Services.Implementations
 {
 	public class ExportService
 	{
